@@ -1,0 +1,7 @@
+*BookHaven*
+    1. Provide a written analysis explaining how your schema design adheres to the principles of normalization.
+    
+    When it comes to 1NF each column must only contain one value and each val must be in own cell. 
+    For Book Table: ID, name, genre, author_id, and price contians atomic vals. e.g name only stores the book name
+    
+    As for 2NF it requires the tbale is in 1NF and that all non-key attributes are 
