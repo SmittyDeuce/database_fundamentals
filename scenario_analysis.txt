@@ -1,0 +1,12 @@
+1. Analyze and describe how the one-to-one relationship between Vehicles and Rental_Agreements will 
+handle scenarios such as new vehicle additions, rental agreement updates, and vehicle availability checks.
+
+
+When it comes to new additions, a new vehicle will be marked "available" untils its gets rented out
+this will create a new rental agreement ID that will also link with the vehicle through its ID as 
+a foreign key. making this a one to one ensures that only one vehicle can be ties to one rental 
+agreement.
+
+As for rental agreement Updates, that all will be one directly to the table such as, rental dates and terms
+
+    
