@@ -7,6 +7,9 @@ this will create a new rental agreement ID that will also link with the vehicle 
 a foreign key. making this a one to one ensures that only one vehicle can be ties to one rental 
 agreement.
 
-As for rental agreement Updates, that all will be one directly to the table such as, rental dates and terms
+As for rental agreement Updates, that all will be done directly to the table if usch needs arise such as changing
+agreement dates and since its one to one it'll also affect to the vehicle tied to it.
 
-    
+To check for Vehichle availability the system would check the Rental_Agreements table for the vehicle in question.
+and if there is an active rental agreement then the vehicle is unavailable, if not then it is.
+
