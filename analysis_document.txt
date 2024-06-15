@@ -1,7 +1,19 @@
 *BookHaven*
     1. Provide a written analysis explaining how your schema design adheres to the principles of normalization.
-    
-    When it comes to 1NF each column must only contain one value and each val must be in own cell. 
-    For Book Table: ID, name, genre, author_id, and price contians atomic vals. e.g name only stores the book name
-    
-    As for 2NF it requires the tbale is in 1NF and that all non-key attributes are 
+
+        Each entity table has only one value in each cell that are dependent on the PK and when it comes to non primary keys
+        they are not dependent on each other.
+
+
+    2.Discuss specific examples from your design that demonstrate 1NF, 2NF, and 3NF.
+
+        When it comes to 1NF each column must only contain one value and each val must be in own cell. 
+        For Book Table: ID, name, genre, author_id, and price contains atomic vals. e.g name only stores the book name
+        
+        As for 2NF it requires the table is in 1NF and that all non-key attributes are fully 
+        functionally dependent on the primary key.
+        For Authors Table: all columns outside of the primary key are dependent on the key
+
+        Lastly for 3NF it requires that the table is in both 1NF and 2NF and an attribute that is not a primary key
+        is not dependent on another non-primary key.
+        For  Customers Table: name, email and phone are directly dependent on the primary key
